@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="title_activity_home">SOS povodeň</string>
+    <string name="title_activity_sos">Tísňové volání</string>
+    <string name="title_activity_language">Jazyk</string>
+    <string name="title_activity_about">Povodně v Libereckém kraji</string>
+    <string name="title_activity_maps">Mapy</string>
+
+    <string name="current_language">Nastavený jazyk:</string>
+    <string name="change_language">Změnit jazyk</string>
+    <string name="sos_call">Volat</string>
+    <string name="sos_call_number">1188</string>
+    <string name="sos_free_call_number">Volat zdarma</string>
+    <string name="sos_press">Zmáčknte</string>
+    <string name="hydrology">Hydrology of Liberec region</string>
+    <string name="risk_objects">Risk objects</string>
+    <string name="flooding_zones">Important places during the flood</string>
+    <string name="road_information">Road information</string>
+    <string name="select_layers">Vybrat vrstvy</string>
+    <string name="layer_not_loaded">Vrstva se nenačetla</string>
+
+    <string name="title_activity_change_news_options">Zprávy</string>
+    <string name="change_news_options">Změnit nastavení zpráv</string>
+    <string name="current_news_option">Zprávy za poslední:</string>
+    <string name="day">1 den</string>
+    <string name="week">1 týden</string>
+    <string name="month">1 měsíc</string>
+    <string name="year">1 rok</string>
+    <string name="all">Všechny zprávy</string>
+    <string name="network_unavailable">Síť není dostupná</string>
+    <string name="connection_issue">Chyba připojení</string>
+
+    <string name="about_flooding">O povodních</string>
+    <string name="information_about_flooding">Informace, historie, FAQ (často kladené dotazy)</string>
+    <string name="maps">Mapy</string>
+    <string name="maps_weather_floods_acidents">Počasí, povodně, nehody</string>
+    <string name="news">Události</string>
+    <string name="police_fire_medic">Záchranné složky</string>
+    <string name="legend_is_not_available">[CS] Legend is not available</string>
+</resources>

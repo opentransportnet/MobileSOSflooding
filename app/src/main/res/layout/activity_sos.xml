@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    tools:context="eu.opentransportnet.sosflooding.activities.HomeActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C00066ff"
+        android:layout_below="@+id/tool_bar">
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/tool_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tool_bar"
+            android:gravity="center"
+            android:paddingTop="30dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/text_press_activity_sos"
+                    android:layout_toStartOf="@+id/text_press_activity_sos">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/sos_call"
+                        android:id="@+id/textView"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/sos_call_number"
+                        android:id="@+id/textView2"
+                        android:textColor="@color/text_primary"
+                        android:textSize="30dp"
+                        android:textIsSelectable="false"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/buttonsos"
+
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/button"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/sos_free_call_number"
+                        android:id="@+id/textView3"
+                        android:textColor="#59cccccc"
+                        android:textStyle="bold"
+                        android:textSize="50dp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/sos_press"
+                android:id="@+id/text_press_activity_sos"
+                android:textColor="@color/color_red"
+                android:textSize="12dp"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentBottom="false"
+                android:paddingLeft="130dp"
+                android:paddingTop="82dp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

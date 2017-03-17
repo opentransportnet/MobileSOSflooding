@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="eu.opentransportnet.sosflooding"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_liberec"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name=".activities.HomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="eu.opentransportnet.sosflooding.activities.ChangeLangActivity"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity
+            android:name="eu.opentransportnet.sosflooding.activities.ChangeNewsOptionsActivity"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity
+            android:name="eu.opentransportnet.sosflooding.activities.NewsActivity"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity
+            android:name="eu.opentransportnet.sosflooding.activities.NewsListActivity"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activities.SosActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".activities.HomeActivity"/>
+        <activity
+            android:name="eu.opentransportnet.sosflooding.activities.AboutActivity"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activities.MapActivity"
+            android:configChanges="orientation|screenSize">
+        </activity>
+    </application>
+
+</manifest>

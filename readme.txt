@@ -1,0 +1,1 @@
+Key with its config is removed. 
